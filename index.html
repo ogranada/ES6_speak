@@ -44,7 +44,7 @@
 			<div class="slides">
 				<section>
 					<h1>EcmaScript 6</h1>
-					<h3>A Introduction</h3>
+					<h3>An Introduction</h3>
 					<p>
 						<small>Created by <a href="http://github.com/ogranada-xk">Oscar Andrés Granada</a> / <a href="http://twitter.com/oagranada">@oagranada</a></small>
 					</p>
@@ -260,6 +260,29 @@ var w = ()=&gt;{
 export let sampleMethod = function sampleMethod(){
   // TODO: code logic here...
 }
+            </code></pre>
+            <pre><code class="hljs" data-trim contenteditable>
+import * as mortgage from './mortgage';
+sampleMethod();
+            </code></pre>
+
+					</section>
+
+
+					<section>
+						<h2>Context Management</h2>
+						<p>
+            Use of this to access to parent context.
+            </p>
+            <pre><code class="hljs" data-trim contenteditable>
+{
+	"foo": ()=>{
+	},
+	"var": ()=>{
+		this.foo();
+	}
+}
+
             </code></pre>
             <pre><code class="hljs" data-trim contenteditable>
 import * as mortgage from './mortgage';
